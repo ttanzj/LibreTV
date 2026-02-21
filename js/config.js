@@ -26,22 +26,7 @@ const API_SITES = {
         api: 'https://www.example.com/api.php/provide/vod',
         name: '空内容测试源',
         adult: true
-        api: 'http://caiji.dyttzyapi.com/api.php/provide/vod'，
-        name: '电影天堂资源'，
-        adult: 'http://caiji.dyttzyapi.com'
-        api: 'https://json.heimuer.xyz/api.php/provide/vod',
-        name: '黑木耳'，
-        adult: 'https://heimuer.tv'
-        api: 'http://cj.rycjapi.com/api.php/provide/vod',
-        name: '如意资源'
-        api: 'https://bfzyapi.com/api.php/provide/vod',
-        name: '暴风资源'
-        api: 'https://tyyszy.com/api.php/provide/vod',
-        name: '天涯资源'
-        api: 'http://ffzy5.tv/api.php/provide/vod',
-        name: '非凡影视'，
-        adult: 'http://ffzy5.tv'
-      }
+             }
     //ARCHIVE https://telegra.ph/APIs-08-12
 };
 
