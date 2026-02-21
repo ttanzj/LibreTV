@@ -26,7 +26,22 @@ const API_SITES = {
         api: 'https://www.example.com/api.php/provide/vod',
         name: '空内容测试源',
         adult: true
-    }
+        api: 'http://caiji.dyttzyapi.com/api.php/provide/vod'，
+        name: '电影天堂资源'，
+        adult: 'http://caiji.dyttzyapi.com'
+        api: 'https://json.heimuer.xyz/api.php/provide/vod',
+        name: '黑木耳'，
+        adult: 'https://heimuer.tv'
+        api: 'http://cj.rycjapi.com/api.php/provide/vod',
+        name: '如意资源'
+        api: 'https://bfzyapi.com/api.php/provide/vod',
+        name: '暴风资源'
+        api: 'https://tyyszy.com/api.php/provide/vod',
+        name: '天涯资源'
+        api: 'http://ffzy5.tv/api.php/provide/vod',
+        name: '非凡影视'，
+        adult: 'http://ffzy5.tv'
+      }
     //ARCHIVE https://telegra.ph/APIs-08-12
 };
 
@@ -60,7 +75,7 @@ const API_CONFIG = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
             'Accept': 'application/json'
         }
-    },
+    }，
     detail: {
         // 只拼接参数部分
         path: '?ac=videolist&ids=',
@@ -72,7 +87,7 @@ const API_CONFIG = {
 };
 
 // 优化后的正则表达式模式
-const M3U8_PATTERN = /\$https?:\/\/[^"'\s]+?\.m3u8/g;
+const M3U8_PATTERN = /\$https?:\/\/[^''\s]+?\.m3u8/g;
 
 // 添加自定义播放器URL
 const CUSTOM_PLAYER_URL = 'player.html'; // 使用相对路径引用本地player.html
