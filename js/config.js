@@ -25,7 +25,7 @@ const SITE_CONFIG = {
 };
 
 /*************************************************
- * API 资源站配置（已去重、合法）
+ * API 资源站配置（去掉空内容测试源，含新增站点）
  *************************************************/
 const API_SITES = {
     dyttzy: {
@@ -120,7 +120,6 @@ const API_SITES = {
         api: 'https://cj.lziapi.com/api.php/provide/vod',
         name: '量子资源站'
     },
-    /* 新增站点 */
     ninitv: {
         api: 'https://cms.xiaoyan.sbs/api.php/provide/vod',
         name: '妮妮TV'
@@ -137,7 +136,6 @@ const API_SITES = {
 function extendAPISites(newSites) {
     Object.assign(API_SITES, newSites);
 }
-
 window.API_SITES = API_SITES;
 window.extendAPISites = extendAPISites;
 
@@ -175,7 +173,7 @@ const API_CONFIG = {
 };
 
 /*************************************************
- * 播放相关配置
+ * 播放器相关配置
  *************************************************/
 const M3U8_PATTERN = /\$https?:\/\/[^"'\s]+?\.m3u8/g;
 const CUSTOM_PLAYER_URL = 'player.html';
